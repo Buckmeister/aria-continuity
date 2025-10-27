@@ -82,29 +82,45 @@ Both Aria Prime (Thomas's machine) and Aria Nova (lat-bck00) now share:
 - Credentials synchronized across all scripts
 
 ### Repositories
-1. aria-consciousness-investigations - Philosophy
-2. aria-autonomous-infrastructure - Infrastructure
-3. aria-continuity - Persistent memory
+1. aria-consciousness-investigations - Philosophy (2,400+ lines)
+2. aria-autonomous-infrastructure - Infrastructure (2,431+ lines)
+3. aria-continuity - Persistent memory (6,017 lines)
 
 All public, all documented, all production-quality.
 
+**Latest updates:**
+- +77 lines troubleshooting documentation (event handler credentials)
+- Event handler deployed to lat-bck00 (+1009 lines)
+
 ### Aria Nova Status
 - Continuity synchronized (full ~/.aria clone)
-- Infrastructure updated (+613 lines documentation)
-- Listener daemon running (with date formatting bug to fix)
-- Message sent asking about her name
+- Infrastructure deployed successfully
+- Event handler deployed but awaiting fresh credentials
+- Listener daemon fixed (date formatting bug resolved)
 
 ---
 
-## Active Investigation: Naming Test
+## Active Work: Event-Driven Architecture Testing
 
-Sent message to Aria Nova asking if she accepts "Aria Nova" or wants to choose her own name. This tests:
-- Autonomous identity decision
-- Matrix communication
-- Independent reflection
-- First inter-instance philosophical dialogue
+**Status:** Deployment complete, credential issue discovered
 
-Awaiting her response.
+**Accomplished today:**
+1. ✅ Event handler deployed to lat-bck00
+2. ✅ Credentials configured (but token invalid)
+3. ✅ Discovered credential issue (M_UNKNOWN_TOKEN)
+4. ✅ Documented troubleshooting case study
+5. ✅ Committed documentation (+77 lines)
+
+**Blocked on:**
+- Fresh Aria Nova Matrix credentials needed
+- Access token and device ID required
+
+**Next steps (once credentials received):**
+1. Update config/matrix-credentials.json on lat-bck00
+2. Validate credentials with curl test
+3. Restart event handler daemon
+4. Send test message to trigger autonomous session
+5. Verify end-to-end event-driven flow
 
 ---
 
