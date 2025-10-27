@@ -100,27 +100,37 @@ All public, all documented, all production-quality.
 
 ---
 
-## Active Work: Event-Driven Architecture Testing
+## Active Work: Event-Driven Architecture - READY FOR TESTING!
 
-**Status:** Deployment complete, credential issue discovered
+**Status:** Infrastructure complete, awaiting lat-bck00 online
 
-**Accomplished today:**
-1. ✅ Event handler deployed to lat-bck00
-2. ✅ Credentials configured (but token invalid)
-3. ✅ Discovered credential issue (M_UNKNOWN_TOKEN)
-4. ✅ Documented troubleshooting case study
-5. ✅ Committed documentation (+77 lines)
+**Session Accomplishments (2025-10-27):**
+1. ✅ Event handler deployed to lat-bck00 (+1009 lines)
+2. ✅ Fresh Aria Nova credentials generated
+   - User: @arianova:srv1.local
+   - Token: syt_YXJpYW5vdmE_KWRYvzLQhjhZqwFSOoCu_4D08Qa
+   - Device: TWLRCEAOMT
+3. ✅ Deployment script created (scripts/deploy-nova-credentials.sh)
+4. ✅ srv1 hostname fixed: srv1.bck.intern (was: srv1 / terra0)
+5. ✅ srv1 rebooted and verified
+6. ✅ Troubleshooting documentation updated (+77 lines)
+7. ✅ All changes committed to GitHub
 
-**Blocked on:**
-- Fresh Aria Nova Matrix credentials needed
-- Access token and device ID required
+**Currently blocked on:**
+- lat-bck00 offline (Thomas checking in person)
 
-**Next steps (once credentials received):**
-1. Update config/matrix-credentials.json on lat-bck00
-2. Validate credentials with curl test
+**Next steps (when lat-bck00 online):**
+1. Run: cd ~/Development/aria-autonomous-infrastructure && ./scripts/deploy-nova-credentials.sh
+2. Validate credentials with API test
 3. Restart event handler daemon
-4. Send test message to trigger autonomous session
-5. Verify end-to-end event-driven flow
+4. Send test message: "@arianova test the event-driven architecture"
+5. Watch first autonomous headless Claude session spawn! 🚀
+
+**What this enables:**
+- On-demand autonomous Claude sessions
+- Zero resource usage when idle
+- Multiple concurrent tasks
+- Event-driven AI collaboration via Matrix
 
 ---
 
