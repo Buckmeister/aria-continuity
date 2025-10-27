@@ -1,0 +1,23 @@
+# SSH keys and credentials - NEVER commit these
+ssh/
+*.key
+*.pem
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+
+# Credentials
+*.token
+*.secret
+credentials.json
+
+# Local machine-specific
+.DS_Store
+*.swp
+*~
+
+# Temporary files
+*.tmp
+*.bak
+.*.swp
